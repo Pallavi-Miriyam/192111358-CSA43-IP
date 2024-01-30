@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlour Booking</title>
+    <!-- Include CSS styles here -->
+</head>
+<body>
+
+    <h1>Beauty Parlour Booking</h1>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchBar" placeholder="Search for beauty parlors">
+    <button onclick="searchParlors()">Search</button>
+
+    <!-- Reservation Form -->
+    <h2>Book Appointment</h2>
+    <form id="reservationForm" onsubmit="submitReservation()">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" required>
+
+        <label for="customerName">Your Name:</label>
+        <input type="text" id="customerName" required>
+
+        <!-- Add more fields as needed -->
+
+        <button type="submit">Book Now</button>
+    </form>
+
+    <!-- Include JavaScript for functionality -->
+    <script>
+        function searchParlors() {
+            // Implement search functionality
+        }
+
+        function submitReservation() {
+            // Implement reservation submission logic
+        }
+    </script>
+
+    <!-- Include CSS styles -->
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</body>
+</html>
