@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Booking Confirmation - Bus Ticket Booking System</title>
+</head>
+<body>
+    <header>
+        <h1>Booking Confirmation</h1>
+    </header>
+
+    <section id="content">
+        <h2>Your ticket has been successfully booked!</h2>
+
+        <!-- Display booking details -->
+        <p>Name: John Doe</p>
+        <p>Cost: $50</p>
+        <p>Date: 2024-02-01</p>
+        <p>Destination: Example City</p>
+
+        <p>Thank you for using our Bus Ticket Booking System.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bus Ticket Booking System</p>
+    </footer>
+</body>
+</html>
