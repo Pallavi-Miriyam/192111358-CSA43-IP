@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      background-color: #eee;
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .user-info, .admin-actions {
+      margin-top: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Library</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('login')">Login</a>
+    <a href="#" onclick="showSection('user')">User</a>
+    <a href="#" onclick="showSection('admin')">Admin</a>
+  </nav>
+
+  <section id="login">
+    <form action="#" method="post">
+      <label for="username">Username:pallavi</label>
+      <input type="text" id="username" name="username" value="pallavi" required>
+
+      <label for="password">Password:pallu</label>
+      <input type="password" id="password" name="password" value="default password"required>
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="user" style="display: none;">
+    <div class="user-info">
+      <h2>Welcome, [Username]</h2>
+      <p>Name: [User's Name]</p>
+      <p>Book: [Book Name]</p>
+      <p>Date: [Date]</p>
+      <p>Time: [Time]</p>
+    </div>
+  </section>
+
+  <section id="admin" style="display: none;">
+    <div class="admin-actions">
+      <h2>Admin Panel</h2>
+      <table>
+        <tr>
+          <th>Book Name</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>[Book Name]</td>
+          <td>[Date]</td>
+          <td>[Time]</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+            <button>Calculate Fine</button>
+          </td>
+        </tr>
+        <!-- More rows as needed -->
+      </table>
+    </div>
+  </section>
+
+  <script>
+    function showSection(sectionId) {
+      // Hide all sections
+      document.getElementById('login').style.display = 'none';
+      document.getElementById('user').style.display = 'none';
+      document.getElementById('admin').style.display = 'none';
+
+      // Show the selected section
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
+
